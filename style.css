@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(185, 75%, 39%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 18px;
+    font-family: 'Kumbh Sans', sans-serif;
+    overflow: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+.bg-top {
+    position: absolute;
+    top: -50%;
+    right: 50%;
+    z-index: -1;
+}
+
+.bg-bottom {
+    position: absolute;
+    bottom: -50%;
+    left: 50%;
+    z-index: -1;
+}   
+
+.card-container {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0.8rem;
+    max-width: 325px;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0px 0.6rem 4rem hsla(229, 23%, 23%, 0.5);
+}
+
+.card-container .bg-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.card-container .pf-img {
+    position: absolute;
+    border-radius: 50%;
+    border: 5px solid hsl(0, 0%, 100%);
+    left: 50%;
+    transform: translate(-50%, 80%);
+}
+
+.card-container .content {
+    padding: 4.4rem 0 1.6rem 0;
+    text-align: center;
+}
+
+.content h1 {
+    color: hsl(229, 23%, 23%);
+    font-size: 1.2rem;
+}
+
+.content span {
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+    margin-left: 0.2rem;
+}
+
+.content p {
+    color: hsl(227, 10%, 46%);
+    font-size: 0.9rem;
+    margin-top: 0.6rem;
+}
+
+.card-container .bottom {
+    border-top: 1px solid hsla(227, 10%, 46%, 0.3);
+    padding: 1.4rem 2rem;
+}
+
+.bottom ul {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center; */
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+
+.bottom li {
+    color: hsl(229, 23%, 23%);
+    font-weight: 700;
+    display: block;
+    flex: 1;
+}
+
+.bottom span {
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+    display: block;
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+}
+
+@media (min-width: 400px) {
+    .card-container {
+        max-width: 350px;
+    }
+}
